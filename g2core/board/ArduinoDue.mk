@@ -34,6 +34,18 @@ ifeq ("$(BOARD)","gShield")
     DEVICE_DEFINES += SETTINGS_FILE=${SETTINGS_FILE}
 endif
 
+ifeq ("$(BOARD)","stm5045")
+    # This is a due with SainSmart ST-M5045 drivers. We'll use the Due platform, but set defines
+    # for the code to get the pinout right.
+
+    # Note: we call it "g2core-due" instead of "due" since the Motate built-in provides
+    # a "due" BASE_BOARD.
+    BASE_BOARD = g2core-due
+	SETTINGS_FILE = settings_stm5045.h
+    DEVICE_DEFINES += MOTATE_BOARD="stm5045"
+    DEVICE_DEFINES += SETTINGS_FILE=${SETTINGS_FILE}
+endif
+
 ifeq ("$(BOARD)","shopbotShield")
     # This is a due with a shopbot shield. We'll use the Due platform, but set defines
     # for the code to get the pinout right.
