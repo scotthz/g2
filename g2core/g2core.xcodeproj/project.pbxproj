@@ -204,6 +204,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
+		B5F8357B225FDA3500AAFA02 /* G2 ST-M5045 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) VERBOSE=1 COLOR=0 OPTIMIZATION=s BOARD=stm5045";
+			buildConfigurationList = B5F8357C225FDA3500AAFA02 /* Build configuration list for PBXLegacyTarget "G2 ST-M5045" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = .;
+			dependencies = (
+			);
+			name = "G2 ST-M5045";
+			passBuildSettingsInEnvironment = 1;
+			productName = g3_due;
+		};
 		D4037C091CDA42F300BC72AD /* G2 printrboardG2v3 PrintrbotPlus */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION) VERBOSE=1 COLOR=0 CONFIG=PrintrbotPlus BOARD=printrboardG2v3 DEBUG=1";
@@ -411,6 +425,7 @@
 				D4782AAE1D9B16BE00B32136 /* G2 Probotix */,
 				D457112317053BFB00EA19A8 /* index */,
 				D4782AB61D9E39EC00B32136 /* G2 EggBot */,
+				B5F8357B225FDA3500AAFA02 /* G2 ST-M5045 */,
 			);
 		};
 /* End PBXProject section */
@@ -458,6 +473,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		B5F8357D225FDA3500AAFA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BOARD = ArduinoDue;
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PLATFORM = atmel_sam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B5F8357E225FDA3500AAFA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BOARD = ArduinoDue;
+				PATH = "$PATH:/usr/local/gcc-arm-none-eabi/bin";
+				PLATFORM = atmel_sam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		D4037C0B1CDA42F300BC72AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -768,6 +803,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B5F8357C225FDA3500AAFA02 /* Build configuration list for PBXLegacyTarget "G2 ST-M5045" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F8357D225FDA3500AAFA02 /* Debug */,
+				B5F8357E225FDA3500AAFA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D4037C0A1CDA42F300BC72AD /* Build configuration list for PBXLegacyTarget "G2 printrboardG2v3 PrintrbotPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
