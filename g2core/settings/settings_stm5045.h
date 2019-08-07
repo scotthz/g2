@@ -57,12 +57,12 @@
 // Axes
 //
 #define X_AXIS_MODE                 AXIS_STANDARD
-#define X_VELOCITY_MAX              5080.0
+#define X_VELOCITY_MAX              3200.0
 #define X_FEEDRATE_MAX              2032.0
 #define X_TRAVEL_MIN                0.0
-#define X_TRAVEL_MAX                609.6   // 24.0
-#define X_JERK_MAX                  5080    // 200
-#define X_JERK_HIGH_SPEED           7620    // 300
+#define X_TRAVEL_MAX                615
+#define X_JERK_MAX                  3600
+#define X_JERK_HIGH_SPEED           4000
 #define X_HOMING_INPUT              1
 #define X_HOMING_DIRECTION          0
 #define X_SEARCH_VELOCITY           1016.0  // 40.0
@@ -71,12 +71,12 @@
 #define X_ZERO_BACKOFF              1.0
 
 #define Y_AXIS_MODE                 AXIS_STANDARD
-#define Y_VELOCITY_MAX              5080.0
+#define Y_VELOCITY_MAX              3200.0
 #define Y_FEEDRATE_MAX              2032.0
 #define Y_TRAVEL_MIN                0.0
 #define Y_TRAVEL_MAX                807.72  // 31.8
-#define Y_JERK_MAX                  5080    // 200
-#define Y_JERK_HIGH_SPEED           7620    // 300
+#define Y_JERK_MAX                  3600
+#define Y_JERK_HIGH_SPEED           4000
 #define Y_HOMING_INPUT              3
 #define Y_HOMING_DIRECTION          0
 #define Y_SEARCH_VELOCITY           1016.0  // 40.0
